@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
 import './App.css';
 
-class App extends Component {
+import TodoList from './components/TodoList'
+import AddTodoForm from './components/AddTodoForm'
 
+
+class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="title">To Do List</div>
+        <div className="App__title">To Do List</div>
+        <AddTodoForm />
+        <TodoList />
       </div>
     );
   }
 }
-
-
 
 export default App;
